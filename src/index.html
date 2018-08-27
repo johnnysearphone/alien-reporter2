@@ -9,6 +9,11 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+    <h2>Basic Request</h2>
+    <button type="button" (click)="makeRequest()">Make Request</button>
+    <div *ngIf="loading">loading...</div>
+    <pre>Data Obtained is: {{ data | json }}</pre>
+ 
+ 
 </body>
 </html>
